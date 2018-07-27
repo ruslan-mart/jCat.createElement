@@ -375,7 +375,7 @@ var element = jCat.createElement("span#text", {
 });
 ```
 
-## Лецензия
+## Лицензия
 
 [MIT](./LICENSE)
 

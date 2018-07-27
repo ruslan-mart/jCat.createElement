@@ -1,0 +1,37 @@
+{
+  "name": "jcat-create-element",
+  "version": "1.0.0",
+  "description": "Creates an element using the «selector» parameter and other options",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {},
+  "scripts": {
+    "build": "jcat-builder",
+    "bulid:min": "jcat-builder --compress"
+  },
+  "devDependencies": {
+    "jcat-builder": "^0.1.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ruslan-mart/jCat.createElement.git"
+  },
+  "keywords": [
+    "jcat",
+    "js",
+    "javascript",
+    "createElement",
+    "DOM"
+  ],
+  "author": "Ruslan Mart",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ruslan-mart/jCat.createElement/issues"
+  },
+  "homepage": "https://github.com/ruslan-mart/jCat.createElement#readme",
+  "builderOptions": {
+    "bundle": "./dist/jCat.createElement.js"
+  }
+}

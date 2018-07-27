@@ -1,0 +1,62 @@
+body {
+	background-color: #E4FFDE;
+	color: #777;
+	font-size: 14px;
+	margin: 0;
+	padding: 28px;
+}
+
+h1 {
+	text-align: center;
+}
+
+a, div, span {
+	background-color: #E7E7E7;
+	border: 1px solid #C1C1C1;
+	border-radius: 8px;
+	color: inherit;
+	display: block;
+	font-size: 16px;
+	height: 16px;
+	margin: 8px 0;
+	padding: 12px 16px;
+	text-decoration: none;
+}
+a[class]::after, div[class]::after, span[class]::after,
+a::before, div::before, span::before {
+	border: 1px solid #C1C1C1;
+	border-radius: 4px;
+	color: #FFF;
+	content: 'div';
+	float: left;
+	font-size: 12px;
+	padding: 1px 4px;
+	margin-right: 6px;
+}
+a[class]::after, div[class]::after, span[class]::after {
+	background-color: #555;
+	content: attr(class);
+}
+
+a::before {
+	background-color: #75aeff;
+	content: 'a';
+}
+div::before {
+	background-color: #00D789;
+	content: 'div';
+}
+span::before {
+	background-color: #d191bd;
+	content: 'span';
+}
+
+a[id]::before {
+	content: 'a#' attr(id);
+}
+div[id]::before {
+	content: 'div#' attr(id);
+}
+span[id]::before {
+	content: 'span#' attr(id);
+}

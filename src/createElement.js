@@ -25,9 +25,10 @@ let createElement = {
 
 				selectorItems = selectorItems.split(/(?=[.#])/);
 
-				for (let item of selectorItems) {
+				for (let i = 0; i !== selectorItems.length; i++) {
 
-					let value = item.substring(1);
+					let item = selectorItems[i],
+						value = item.substring(1);
 
 					if (item.charAt(0) === '.') {
 						classList.push(value);

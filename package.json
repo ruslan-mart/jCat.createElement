@@ -1,6 +1,6 @@
 {
   "name": "jcat-create-element",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Creates an element using the «selector» parameter and other options",
   "main": "index.js",
   "directories": {

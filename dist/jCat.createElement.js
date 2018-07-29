@@ -28,33 +28,15 @@ var createElement = {
 
       if (selectorItems !== '') {
         selectorItems = selectorItems.split(/(?=[.#])/);
-        var _iteratorNormalCompletion = true;
-        var _didIteratorError = false;
-        var _iteratorError = undefined;
 
-        try {
-          for (var _iterator = selectorItems[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
-            var item = _step.value;
-            var value = item.substring(1);
+        for (var i = 0; i !== selectorItems.length; i++) {
+          var item = selectorItems[i],
+              value = item.substring(1);
 
-            if (item.charAt(0) === '.') {
-              classList.push(value);
-            } else {
-              id = value;
-            }
-          }
-        } catch (err) {
-          _didIteratorError = true;
-          _iteratorError = err;
-        } finally {
-          try {
-            if (!_iteratorNormalCompletion && _iterator.return != null) {
-              _iterator.return();
-            }
-          } finally {
-            if (_didIteratorError) {
-              throw _iteratorError;
-            }
+          if (item.charAt(0) === '.') {
+            classList.push(value);
+          } else {
+            id = value;
           }
         }
       }
